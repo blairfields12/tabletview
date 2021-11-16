@@ -1,0 +1,433 @@
+header ul li a:hover{
+    color:plum;
+    text-decoration: plum;
+    border: 3px dashed purple;
+}
+
+nav ul li { 
+    text-align: left;
+    display: inline;
+}
+
+header ul li a:visited{
+    color:blue;
+  }
+
+.navigationBar { 
+    display: flex; 
+    flex-direction: column;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 33px -19px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:25px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 22px;
+	text-decoration:none;
+	text-shadow:-1px -1px 29px #ffffff;
+    margin-bottom: 5px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }     */
+
+.navigationBar .current { 
+    color:magenta;
+    border: 4px solid lightskyblue;
+    text-transform: uppercase;
+    border-radius: 15px;
+
+}
+
+.SkipToContentLink { 
+    color: royalblue;
+    position: absolute;
+    top:5px;
+    left:0px;
+    transition: transform 0.3s;
+}
+
+
+body header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+ header img {
+    height: 200px;
+}
+
+header{ 
+    background-color: lightyellow;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* how do i make this extend the whole width of page */
+}
+body{
+    color: #000000;
+    font-size: 20px;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color:#F6F7FF;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 0px;
+}
+
+h1 { 
+    font-size: 40px;
+    color: #0000cd;
+    font-family: Brush Script MT, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    /* padding-left: 20px; */
+   margin: auto;
+   text-align: center;
+}
+
+h2 { 
+    font-size: 30px;
+    color: #7F00FF;
+    /* padding-left: 20px; */
+}
+
+p { 
+    font-size: 25px;
+    color: #696969;
+    /* text-align: center; */
+    /* padding-left: 20px; */
+}
+
+h3 { 
+    font-size: 25px; 
+    color: #696969;
+}
+
+h4 {
+    font-size: 20px;
+    color: #696969;
+}
+
+h4 ul li a:hover{
+    /* text-decoration: underline dotted navy 4px; */
+    border: 2px solid navy;
+}
+
+
+
+h4 ul li a{
+    color: #696969;    
+  }
+
+ h4 li { 
+    list-style-type: circle;
+    margin-left: 30px;
+ } 
+
+h4 ul li a:visited{
+    color:#696969;
+  }
+
+h1, h2, p, h4, h3 { 
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #FFF6FF;
+    background: #FFF6FF -webkit-gradient(linear, left top, left bottom, from(#D0FFFD), to(#FFF6FF)) no-repeat;
+        /* how do i make this extend the whole width of page */
+  }
+
+footer p{ 
+    /* text-align: center;
+    position: absolute;
+    margin:0;
+    padding:0;
+    width: 100%; */
+    color: #000000
+}
+
+/* Main/Portfolio Intro Page */
+div.headshot {
+    align-items: center;
+    max-width: 800px;
+    max-height: 800px;
+    align-items: center;
+    margin:auto;
+    text-align: center;
+}
+.headshot img { 
+    height: 300px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+}
+main a { 
+    color: #696969;
+    font-style: italic;
+}
+main a:hover {
+    text-decoration: underline dotted red
+}
+main a:visited{
+    color:#696969; 
+}
+ 
+footer p a img{
+    height: 40px;
+    max-width: 50px;
+}
+
+/* Photos page  */
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: space-between; */
+    min-width: 250px;
+    min-height: 250px; 
+}
+
+.photos > img{
+    border: 5px #010265 solid;
+    height: 300px;
+    width: 300px;
+    margin: 7px;
+  }
+
+  /* resume page */
+
+  #main a:visited {
+    /* color:blueviolet; */
+    color: #696969;
+}
+
+  iframe {
+      width: 90%;
+      /* height: 500px; */
+      height: 100vh;
+  }
+
+  .transcript { 
+      display: none;
+      /* make it display on tablet and laptop views */
+  }
+
+  .resume { 
+      display: none;
+  }
+
+  
+
+    /* .relevantclasses li{ 
+        list-style-type: square;
+    } */
+
+      /* display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;   
+      list-style-type: square;      margin-left: 10px;  */
+      /* display: flex;
+      flex-direction: column; */
+      /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: space-between; */
+    /* align-items: space-between;
+    min-width: 250px;
+    min-height: 250px; 
+    list-style-type: square */
+
+    .relevantclasses li{ 
+        font-weight: lighter;
+        font-size: 18px;
+        /* try to figur out how to make class names stay put but if you click it lets you see description or scroll or soemthing --
+        -- if i can do that, make font-weight:bold, but if not, keep light */
+        color: #696969;
+        justify-self: center;
+        justify-content: center;
+        list-style-type: square;
+        margin-bottom: 15px;
+    }
+    .relevantclasses{
+        /* text-align: center; */
+        list-style-type: square;
+        margin-left: 60px;
+        align-items: center;
+    }
+
+/* hobbies and interest page */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em; 
+    /* width: 100%;   
+    height: 100%; */
+}
+  
+    #h1 { 
+        color: #0000cd;
+        font-size: 49px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: auto;
+        grid-column: 1 / span 3;
+        grid-row: 1 / 1;
+        justify-content: center;
+        font-family: Brush Script MT, 'Times New Roman', Times, serif;
+        text-align: center;
+
+        }
+
+    .flowers { 
+        grid-row: 2 / 2;
+        grid-column: 1 / 1;
+        border: 5px #010265 solid;
+    }
+
+    .flowers img { 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .yummyfood { 
+        grid-row: 2 / 2;
+        grid-column: 2 / 3;
+        border: 5px #010265 solid;
+    }
+
+    .yummyfood img { 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .travelwithfriends { 
+        grid-row: 2 / 2;
+        grid-column: 3 / 3;
+        border: 5px #010265 solid;
+    }
+
+    .travelwithfriends img{ 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .travel { 
+        grid-row: 3 / 3;
+        grid-column: 1 / 1;
+        border: 5px #010265 solid;
+    }
+
+    .travel img { 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .baking { 
+        grid-row: 3 / 3;
+        grid-column: 3 / 3;
+        border: 5px #010265 solid;
+    }
+
+    .baking img { 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .museums { 
+        grid-row: 3 / 3;
+        grid-column: 2 / 2;
+        border: 5px #010265 solid;
+    }
+
+    .museums img { 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .siteseeing { 
+        grid-row: 4 / 4;
+        grid-column: 1 / 1;
+        border: 5px #010265 solid;
+    }
+
+    .siteseeing img { 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;}
+
+    .gameday { 
+        grid-row: 4 / 4;
+        grid-column: 2 / 2;
+        border: 5px #010265 solid;
+    }
+
+    .gameday img { 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;
+    }
+
+    .skiing { 
+        grid-row: 4 / 4;
+        grid-column: 3 / 3;
+        border: 5px #010265 solid;
+    }
+
+    .skiing img { 
+        /* height: 100%; */
+        height: auto;
+        object-fit: cover;
+    }
+ 
+    footer { 
+        grid-column: 1 / span 3;
+    }
+  
+  
