@@ -1,0 +1,78 @@
+<!DOCTYPE html> <!-- tells us its a HTML5 document -->
+<html lang="en"> <!-- language is english -->
+<head> <!-- where we put our meta data - nothing from head tag shoes up on page -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- letting you know screensize (phone, ipad, computer, etc.) -->
+	<link rel="icon" href="images/headerlogo.png"> <!-- how you get pictures on your tabs on browser -->
+	<link rel="stylesheet" href="css/html5reset.css"> 
+	<link rel="stylesheet" href="css/style.css">
+	<title>Blair's Portfolio</title> <!-- title of tab on browser -- only thing you can see  -->
+</head>
+
+<body>
+	<!-- <a class="SkipToContentLink" href="#main">Skip to Content</a> -->
+	
+	<header> <!-- semantic tag -->
+		<a href=portfolio.html>
+			<img src= "images/headerlogo.png" alt="Blair Fields logo" id=BFlogo;>
+		</a>
+
+		<nav> 
+			<ul class=navigationBar>
+				<li class="myButton"><a class="current" href= "portfolio.html">About Me</a></li> <!-- local file -->
+				<li class="myButton"><a href = "resume.html">Professional and Academics</a></li> <!-- local file -->
+				<li class="myButton"><a href = "hobbiesinterests.html">Hobbies and Interests</a></li> <!-- local file -->
+				<li class="myButton"><a href = "photos.html">Photos</a></li> <!-- absolute references -->
+			</ul>
+		</nav>
+	
+	</header>
+
+	<main id="main">
+
+		<h1>Welcome!</h1>
+
+		<h2>Hi everyone! My name is Blair Fields, welcome to my portfolio!</h2>
+		
+		<div class="headshot">
+			<img id="headshot" src="images/headshot.JPG" alt=headshot>
+		</div>
+
+		<p>I am currently a junior at the Univeristy of Michigan studying Information Sciences within the School of Information and 
+			Business within the Ross School of Business. My academic studies allow me 
+			focus on the intersection of people, technology, and information while also 
+			incorporating analytical business knowledge.</p>
+
+		<p>I love using creative, analytical, and quanitative strategies to solve complex problems. 
+			I am passionate about using technology and ensuring that it is used a tool of endorsement, 
+			rather than one of resistance. I am constantly in the pursuit of learning and engagin with 
+			material and information in new and exciting ways. I am a strong believer that the more you know,
+			the better you are for yourself, but also for those around you!
+		</p>
+
+		<h3>A little bit more about me: I'm from Franklin, MI, which is a suburb of Detroit. Growing up, I always wanted to attend the 
+			University of Michigan so going here now is like a dream come true! I love spending time with my family and friends. I 
+			have a puppy named Georige (you will see pictures of her on other pages!) </h3>
+
+
+		<h4>If you have any questions or want to reach out, my contact information is:
+			<ul class=contactinfo>
+				<li class="number"><a href="tel:248-762-2035">Phone Number: 248-762-2035</a></li>
+				<li class="schoolemail"><a href="mailto: fieldsb@umich.edu">School Email: fieldsb@umich.edu</a></li>
+				<li class="personalemail"><a href="mailto: blairfieldss@gmail.com">Personal Email: blairfieldss@gmail.com</a></li>
+				<li class="linkedin"><a href="https://www.linkedin.com/in/blair-fields">LinkedIN</a></li>
+			</ul>
+		</h4>
+
+</main>
+
+<footer>
+	<p>Blair Fields &copy; 2021 <br>
+		<a href="https://www.linkedin.com/in/blair-fields" aria-label = "linkedin"><img src="images/linkedinIcon.png" alt="linkedin"</a>
+		<a href="mailto: fieldsb@umich.edu" aria-label = "gmail"><img src="images/gmailIcon.png" alt="gmail"</a>
+		<a href="https://github.com/blairfields12" aria-label = "github"><img src="images/GitHub-logo.png" alt="github"></a> 
+	</p> <!-- copyright -->
+</footer>
+
+</body>
+</html>

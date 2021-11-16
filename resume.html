@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- tells us its a HTML5 document -->
+<html lang="en"> <!-- language is english -->
+<head> <!-- where we put our meta data - nothing from head tag shoes up on page -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- letting you know screensize (phone, ipad, computer, etc.) -->
+	<link rel="icon" href="images/headerlogo.png"> <!-- how you get pictures on your tabs on browser -->
+	<link rel="stylesheet" href="css/html5reset.css"> 
+	<link rel="stylesheet" href="css/style.css">
+	<title>Blair's Portfolio</title> <!-- title of tab on browser -- only thing you can see  -->
+</head>
+
+<body>
+	<!-- <a class="SkipToContentLink" href="#main">Skip to Content</a> -->
+	<header> <!-- semantic tag -->
+		<a href=portfolio.html>
+			<img src= "images/headerlogo.png" alt="Blair Fields logo" id=BFlogo;>
+		</a>
+		<nav> 
+			<ul class="navigationBar">
+				<li class="myButton"><a href = "portfolio.html">About Me</a></li> <!-- local file -->
+				<li class="myButton"><a class="current" href = "resume.html">Professional and Academics</a></li> <!-- local file -->
+				<li class="myButton"><a href = "hobbiesinterests.html">Hobbies and Interests</a></li> <!-- local file -->
+				<li class="myButton"><a href = "photos.html">Photos</a></li> <!-- absolute references -->
+			</ul>
+		</nav>
+
+	
+
+</header>
+
+<main id="main">
+	<!-- <a class="SkipToContentLink" href="#main">Skip to Content</a> -->
+
+	<h1>Academics Page!</h1>
+	
+	<h2>This page contains information regarding is a brief overview of my early professional and academic careers!</h2>
+
+	<p>I am currently a junior at the Univeristy of Michigan studying Information Sciences within the School of Information and Business within the Ross School of Business. My academic studies allow me 
+		focus on the intersection of people, technology, and information while also incorporating analytical business knowledge. I have taken a wide range of classes, which can be seen on my 
+	<a href = "https://drive.google.com/file/d/1aIt0qKApi6PARNYVfLqoCJKtpQbh-H-5/view?usp=sharing" aria-label="Attachment is my transcript"> transcript.</a></p>
+
+	<div class= transcript>
+		<iframe src="docs/blairtranscript.pdf"></iframe>
+	</div>
+
+	<p>Throughout my early professional career, I have held various roles including those of 
+		business strategist, underwriter, organizational and social media manager, and 
+		commercial real estate intern. While the titles of these roles seem to vary, they all 
+		have an underlying purpose of learning and expanding my knowledge base vastly. 
+		These experiences are highlighted and explained on my 
+	<a href = "https://drive.google.com/file/d/1OIFeQBAkyiR5MhxkwOH5_nb6z3y8mdg6/view?usp=sharing" aria-label="Attachment is my resume"> resume.</a></p>
+
+	<div class= resume>
+		<iframe src="docs/resume.pdf"></iframe>
+	</div>
+
+	<p>Here is an brief highlight of some of the relevant courses I have taken: </p>
+	<ul class= relevantclasses>
+		<li>SI 106: Programs, Information and People</li>
+		<li>SI 110: Introduction to Information Studies </li>
+		<li>SI 206: Data-Oriented Programming</li>
+		<li>SI 300: Career and Internship Studio - Design Your Success</li>
+		<li>SI 310: Information Environments and Work</li>
+		<li>SI 315: Interpersonal and Psychological Implications of Social Media</li>
+		<li>SI 339: Web Design, Development, and Accessibility</li>
+		<li>Acc 471: Principles of Accounting</li>
+		<li>Stats 250: Introduction to Statistics and Data Analysis</li>
+		<li>Psych/Entr 223: Entrepreneurial Creativity</li>
+		<li>Entr 413: Entrepreneurial Marketing</li>
+		<li>ALA 175: Foundations in Leadership</li></ul>
+
+	</ul>
+</main>
+
+<footer>
+	<p>Blair Fields &copy; 2021 <br>
+		<a href="https://www.linkedin.com/in/blair-fields" aria-label = "linkedin"><img src="images/linkedinIcon.png" alt="linkedin"</a>
+		<a href="mailto: fieldsb@umich.edu" aria-label = "gmail"><img src="images/gmailIcon.png" alt="gmail"</a>
+		<a href="https://github.com/blairfields12" aria-label = "github"><img src="images/GitHub-logo.png" alt="github"></a> 
+	</p>
+</footer>
+</body>
+</html>
