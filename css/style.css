@@ -1,7 +1,7 @@
 header ul li a:hover{
     color:plum;
     text-decoration: plum;
-    border: 3px dashed purple;
+    border: 2px dashed #BA55D3;
 }
 
 nav ul li { 
@@ -10,7 +10,7 @@ nav ul li {
 }
 
 header ul li a:visited{
-    color:blue;
+    color: #191970;
   }
 
 .navigationBar { 
@@ -18,17 +18,18 @@ header ul li a:visited{
     flex-direction: column;
 }
 
-.myButton {
+.mybutton {
 	box-shadow:inset 0px 1px 33px -19px #ffffff;
 	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-	background-color:#f9f9f9;
+	/* background-color:#483d8b; */
 	border-radius:25px;
-	border:1px solid #dcdcdc;
+	border:2px solid #483d8b;
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Arial;
-	font-size:15px;
+    font-family: 'Encode Sans', sans-serif;
+    font-size:1em;
+    text-transform: lowercase;
 	font-weight:bold;
 	padding:5px 22px;
 	text-decoration:none;
@@ -39,12 +40,37 @@ header ul li a:visited{
 	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
 	background-color:#e9e9e9;
 }
+
 .myButton:active {
 	position:relative;
 	top:1px;
-}
+} 
 
-/* a.skip{
+
+/* .skip a{
+    color: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position:absolute;
+    top: -40px;
+  }
+   */
+/* .SkipToContentLink { 
+    color: royalblue;
+    position: absolute;
+    top:5px;
+    left:0px;
+    transition: transform 0.3s;
+} */
+
+/* .skip a:focus{
+      top:0;
+    } */
+
+a.skip{
     background: white;
     left: 0;
     padding: 6px;
@@ -53,24 +79,27 @@ header ul li a:visited{
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 1;
-  }     */
+}
+      
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+.skip:visited{
+    color: #191970;
+}
 
 .navigationBar .current { 
-    color:magenta;
-    border: 4px solid lightskyblue;
+    color:#7B68EE;
+    font-size: 1.2em;
+    border: 4px solid #7B68EE;
     text-transform: uppercase;
     border-radius: 15px;
-
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
-.SkipToContentLink { 
-    color: royalblue;
-    position: absolute;
-    top:5px;
-    left:0px;
-    transition: transform 0.3s;
-}
-
 
 body header {
     display: flex;
@@ -84,7 +113,7 @@ body header {
 }
 
 header{ 
-    background-color: lightyellow;
+    background-color: #778ba5;
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
@@ -92,9 +121,9 @@ header{
 }
 body{
     color: #000000;
-    font-size: 20px;
+    /* font-size: 20px; */
     margin: 20px;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
     background-color:#F6F7FF;
     width: 100%;
     margin-left: 0px;
@@ -105,41 +134,49 @@ body{
 }
 
 h1 { 
-    font-size: 40px;
-    color: #0000cd;
-    font-family: Brush Script MT, 'Times New Roman', Times, serif;
-    font-size: 70px;
+    font-size: 4em;
+    color: #4B0082;
+    font-family: 'Encode Sans', sans-serif;
+    /* font-size: 70px; */
     /* padding-left: 20px; */
    margin: auto;
    text-align: center;
 }
 
 h2 { 
-    font-size: 30px;
-    color: #7F00FF;
+    font-size: 1.5em;
+    color: #696969;
+    font-weight:bold;
+
     /* padding-left: 20px; */
 }
 
 p { 
-    font-size: 25px;
+    font-size: 1.2em;
     color: #696969;
     /* text-align: center; */
     /* padding-left: 20px; */
 }
 
 h3 { 
-    font-size: 25px; 
+    font-size: 1.2em; 
     color: #696969;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 1.2em;
     color: #696969;
+}
+
+h4 ul li{ 
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-size: 0.8em;
 }
 
 h4 ul li a:hover{
     /* text-decoration: underline dotted navy 4px; */
-    border: 2px solid navy;
+    border: 2px solid 000080;
 }
 
 
@@ -175,7 +212,7 @@ footer p{
     margin:0;
     padding:0;
     width: 100%; */
-    color: #000000
+    color: #696969;
 }
 
 /* Main/Portfolio Intro Page */
@@ -187,6 +224,7 @@ div.headshot {
     margin:auto;
     text-align: center;
 }
+
 .headshot img { 
     height: 300px;
     width: 400px;
@@ -196,12 +234,14 @@ div.headshot {
     align-content: center;
     display: inline-block;
 }
-main a { 
+main ul li a { 
     color: #696969;
-    font-style: italic;
+    /* font-style: italic; */
+    text-decoration: none;
 }
 main a:hover {
-    text-decoration: underline dotted red
+    text-decoration: underline dotted #1f11e7;
+    background-color: #FFFFF0;
 }
 main a:visited{
     color:#696969; 
@@ -278,7 +318,7 @@ footer p a img{
 
     .relevantclasses li{ 
         font-weight: lighter;
-        font-size: 18px;
+        font-size: 1em;
         /* try to figur out how to make class names stay put but if you click it lets you see description or scroll or soemthing --
         -- if i can do that, make font-weight:bold, but if not, keep light */
         color: #696969;
@@ -287,6 +327,7 @@ footer p a img{
         list-style-type: square;
         margin-bottom: 15px;
     }
+
     .relevantclasses{
         /* text-align: center; */
         list-style-type: square;
@@ -294,28 +335,31 @@ footer p a img{
         align-items: center;
     }
 
+
 /* hobbies and interest page */
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em; 
     /* width: 100%;   
     height: 100%; */
 }
   
-    #h1 { 
-        color: #0000cd;
-        font-size: 49px;
+    #h2 { 
+        color: #696969;;
+        font-size: 1.5em;
         padding-top: 10px;
         padding-bottom: 10px;
         margin: auto;
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 2;
         grid-row: 1 / 1;
         justify-content: center;
-        font-family: Brush Script MT, 'Times New Roman', Times, serif;
-        text-align: center;
+        overflow: scroll;
+        font-family: 'Encode Sans', sans-serif;
+        /* font-family: Brush Script MT, 'Times New Roman', Times, serif; */
+        /* text-align: center; */
 
         }
 
@@ -333,7 +377,7 @@ footer p a img{
 
     .yummyfood { 
         grid-row: 2 / 2;
-        grid-column: 2 / 3;
+        grid-column: 2 / 2;
         border: 5px #010265 solid;
     }
 
@@ -344,8 +388,8 @@ footer p a img{
     }
 
     .travelwithfriends { 
-        grid-row: 2 / 2;
-        grid-column: 3 / 3;
+        grid-row: 3 / 3;
+        grid-column: 1 / 1;
         border: 5px #010265 solid;
     }
 
@@ -357,7 +401,7 @@ footer p a img{
 
     .travel { 
         grid-row: 3 / 3;
-        grid-column: 1 / 1;
+        grid-column: 2 / 2;
         border: 5px #010265 solid;
     }
 
@@ -368,8 +412,8 @@ footer p a img{
     }
 
     .baking { 
-        grid-row: 3 / 3;
-        grid-column: 3 / 3;
+        grid-row: 4/ 4;
+        grid-column: 1 / 1;
         border: 5px #010265 solid;
     }
 
@@ -380,7 +424,7 @@ footer p a img{
     }
 
     .museums { 
-        grid-row: 3 / 3;
+        grid-row: 4 / 4;
         grid-column: 2 / 2;
         border: 5px #010265 solid;
     }
@@ -392,7 +436,7 @@ footer p a img{
     }
 
     .siteseeing { 
-        grid-row: 4 / 4;
+        grid-row: 5 / 5;
         grid-column: 1 / 1;
         border: 5px #010265 solid;
     }
@@ -403,7 +447,7 @@ footer p a img{
         object-fit: cover;}
 
     .gameday { 
-        grid-row: 4 / 4;
+        grid-row: 5 / 5;
         grid-column: 2 / 2;
         border: 5px #010265 solid;
     }
@@ -415,8 +459,8 @@ footer p a img{
     }
 
     .skiing { 
-        grid-row: 4 / 4;
-        grid-column: 3 / 3;
+        grid-row: 6 / 6;
+        grid-column: 1 / 1;
         border: 5px #010265 solid;
     }
 
@@ -425,9 +469,245 @@ footer p a img{
         height: auto;
         object-fit: cover;
     }
+
+    .film { 
+        grid-row: 6 / 6;
+        grid-column: 2 / 2;
+        border: 5px #010265 solid;
+    }
+
+    .film img{
+        height: auto;
+        object-fit: cover;
+    }
+
+    .flowerhouse { 
+        grid-row: 7 / 7;
+        grid-column: 1 / 1;
+        border: 5px #010265 solid;
+    }
+
+    .flowerhouse img{ 
+        height: auto;
+        object-fit: cover;
+    }
+
+    .vangough { 
+        grid-row: 7 / 7;
+        grid-column: 2 / 2;
+        border: 5px #010265 solid;
+    }
+    
+    .vangough img { 
+        height: auto;
+        object-fit: cover;
+    }
  
     footer { 
         grid-column: 1 / span 3;
     }
+
+    /* TABLET VIEW */
+    /* TABLET VIEW */
   
+  @media screen and (min-width:800px) { 
+    body header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navigationBar { 
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em; 
+    }
+
+  #h2 {  
+    /* color: #0000cd; */
+    /* color: #696969; */
+    margin-left: 20px;
+    font-size: 1.5em;
+    color: #696969;;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    /* margin: auto; */
+    grid-column: 1 / span 3;
+    grid-row: 1 / 1;
+    justify-content: center;
+    font-family: 'Encode Sans', sans-serif;
+    text-align: center;
+    }
+
+    .flowers { 
+        grid-row: 2 / 2;
+        grid-column: 1 / 1;
+        border: 5px #010265 solid;
+    }
+
+    .flowers img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .yummyfood { 
+        grid-row: 2 / 2;
+        grid-column: 2 / 3;
+        border: 5px #010265 solid;
+    }
+
+    .yummyfood img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .travelwithfriends { 
+        grid-row: 2 / 2;
+        grid-column: 3 / 3;
+        border: 5px #010265 solid;
+    }
+
+    .travelwithfriends img{ 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .travel { 
+        grid-row: 3 / 3;
+        grid-column: 1 / 1;
+        border: 5px #010265 solid;
+    }
+
+    .travel img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .baking { 
+        grid-row: 3 / 3;
+        grid-column: 3 / 3;
+        border: 5px #010265 solid;
+    }
+
+    .baking img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .museums { 
+        grid-row: 3 / 3;
+        grid-column: 2 / 2;
+        border: 5px #010265 solid;
+    }
+
+    .museums img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .siteseeing { 
+        grid-row: 4 / 4;
+        grid-column: 1 / 1;
+        border: 5px #010265 solid;
+    }
+
+    .siteseeing img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;}
+
+    .gameday { 
+        grid-row: 4 / 4;
+        grid-column: 2 / 2;
+        border: 5px #010265 solid;
+    }
+
+    .gameday img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .skiing { 
+        grid-row: 4 / 4;
+        grid-column: 3 / 3;
+        border: 5px #010265 solid;
+    }
+
+    .skiing img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .film { 
+        grid-row: 5 / 5;
+        grid-column: 1 / 1;
+        border: 5px #010265 solid;
+    }
+
+    .film img{
+        height: auto;
+        object-fit: cover;
+    }
+
+    .flowerhouse { 
+        grid-row: 5 / 5;
+        grid-column: 2 / 2;
+        border: 5px #010265 solid;
+    }
+
+    .flowerhouse img{ 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+
+    .vangough { 
+        grid-row: 5 / 5;
+        grid-column: 3 / 3;
+        border: 5px #010265 solid;
+    }
+    
+    .vangough img { 
+        height: 100%;
+        /* height: auto; */
+        object-fit: cover;
+    }
+ 
+    footer { 
+        grid-column: 1 / span 3;
+    }
+
+    /* NEED TO DO SOMETHING WITH GRID */
+
+    .transcript { 
+        display: block;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
   
+    .resume { 
+        display: block;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
